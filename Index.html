@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>crypto game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="Styles.css">
+    <script src="Index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Crypto challenge
+        </h1>
+        <h1><i class="fas fa-gem"></i> Crypto Challenge</h1>
+
+        <!--roundInfo shows the round you are in-->
+        <!--Hints gives clues on the coin-->
+        <!--guessInput is where the player types their guess-->
+        <!--Feedback shows correct/incorrect results-->
+        <button id="startBtn">Start The Challenge</button>
+        <!--game area hidden at first)-->
+        <div id="gameArea" class="hidden">
+            <div id="roundsInfo"></div>
+            <div class="Hint" id="Hint"></div>
+            <!--guess input-->
+            <input type="text" id="guessInput" placeholder="coin name...">
+            <button id="submitGuess">submit</button>
+            <!--feedback-->
+            <div class="Feedback" id="Feedback"></div>
+        </div>
+            <!--resultArea (hidden at first)-->
+        <div id="resultArea" class="hidden">
+            <p id="finalScore"></p>
+            <div id="answers"></div>
+            <button id="restartButton">Restart the game</button>
+        </div>
+    </div>
+        <!--restart button-->
+
+
+</body>
+</html>

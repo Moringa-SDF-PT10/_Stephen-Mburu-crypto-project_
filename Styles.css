@@ -1,0 +1,124 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    height: 100vh;
+}
+.container{
+    background: linear-gradient(to right, #0b200c, #202520);
+    background: rgba(11, 32, 12, 0.8);
+    background: -webkit-linear-gradient(to right, #0b200c, #202520);
+    background: -moz-linear-gradient(to right, #0b200c, #202520);
+    padding: 20px;
+    border-radius: 12px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    backdrop-filter: blur(8px);
+
+}
+button{
+    padding: 10px 20px;
+    background-color: #0b200c;
+    border: 1px solid #202520;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 8px 0;
+    transition: background-color 0.2s ease;
+
+}
+h1 i {
+    margin-right: 10px;
+    color: #ffd700;
+    text-shadow: 1px 1px 6px #000;
+}
+button:hover{
+    background-color: burlywood;
+    transform: scale(1.05);
+}
+.hidden{
+    display: none;
+}
+.container > * {
+    margin: 10px;
+}
+h1{
+    font-size: 24px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    text-shadow: 0 0 5px #00ffc8, 0 0 10px #00ffc8, 0 0 15px #00ffc8;
+    margin: 0;
+}
+#gameArea,
+#resultArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: yellowgreen;
+    border-radius: 8px;
+    margin-top: 30px;
+    padding: 20px;
+}
+#Hint p {
+    margin: 8px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+    font-size: 16px;
+
+}
+#guessInput{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+
+}
+#Feedback {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+}
+#Feedback.correct {
+    color: #00ff00;
+}
+
+#Feedback.incorrect {
+    color: #ff4c4c;
+}
+#finalScore {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: #00ffc8
+}
+#answers {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.6;
+}
